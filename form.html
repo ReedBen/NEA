@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<form action="/cgi-bin/graph">
+			<p>Select a type:</p>
+			<input type="radio" id="temp" name="id" value="temp" checked>
+			<label>Temperature</label><br>
+			<input type="radio" id="pressure" name="id" value="pressure">
+			<label>Pressure</label><br>
+			<input type="radio" id="humidity" name="id" value="humidity">
+			<label>Humidity</label><br>
+			<input type="radio" id="wind_speed" name="id" value="wind_speed">
+			<label>Wind Speed</label><br>
+			<input type="radio" id="wind_deg" name="id" value="wind_deg">
+			<label>Wind Direction</label><br><br>
+			<hr>
+			<p>Select a output:</p>
+			<input type="radio" id="Graph" name="type" value="Graph" checked>
+			<label>Graph</label><br>
+			<input type="radio" id="Table" name="type" value="Table">
+			<label>Table</label><br><br>
+			<input type="submit" value="Generate">
+		</form>
+	</body>
+</html>
