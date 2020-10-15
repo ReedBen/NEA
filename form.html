@@ -2,7 +2,10 @@
 <html>
 	<body>
 		<form action="/cgi-bin/graph">
+			<!-- This helps the user understand what they are meant to be doing -->
 			<p>Select a type:</p>
+			<!-- This are input boxes to select which measurement the user would like to see -->
+			<!-- The first box is already selected -->
 			<input type="radio" id="temp" name="id" value="temp" checked>
 			<label>Temperature</label><br>
 			<input type="radio" id="pressure" name="id" value="pressure">
@@ -13,12 +16,17 @@
 			<label>Wind Speed</label><br>
 			<input type="radio" id="wind_deg" name="id" value="wind_deg">
 			<label>Wind Direction</label><br><br>
+			<!-- This seperates the two input sections -->
 			<hr>
+			<!-- This helps the user understand what they are meant to be doing -->
 			<p>Select a output:</p>
+			<!-- This are input boxes to select which output the user would like to see -->
+			<!-- The first box is already selected -->
 			<input type="radio" id="Graph" name="type" value="Graph" checked>
 			<label>Graph</label><br>
 			<input type="radio" id="Table" name="type" value="Table">
 			<label>Table</label><br><br>
+			<!-- This is how to enter the two inputs -->
 			<input type="submit" value="Generate">
 		</form>
 	</body>
